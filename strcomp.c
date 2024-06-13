@@ -1,12 +1,16 @@
-// Understanding string comparision.
+// Understanding comparsion between two strings.
+// Using strcmp() function.
 #include<stdio.h>
 #include<string.h>
 int main()
 {
-    char str1[]="python";
-    char str2[]="django";
-    printf("%d\n",strcmp(str1,str2)); // if str1 > str2 it returns positive value (vice versa).
-    printf("%d\n",strcmp(str1,"user"));
-    printf("%d",strcmp("user",str2));
+    char str1[]="Hello";
+    char str2[]="Hello";
+    int res;
+    // returns positive integer if str1 > str2.
+    // returns negative integer if str1 < str2.
+    // returns 0 if str1==str2.
+    res=strcmp(str1,str2);
+    printf("%d",res);
     return 0;
 }
