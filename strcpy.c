@@ -4,7 +4,7 @@
 #include<string.h>
 int main()
 {
-    char source[]="Hello Macha";
+    char source[]="Hello World!";
     char destination[20];
     strcpy(destination,source);
     printf("source string: %s\n",source);
