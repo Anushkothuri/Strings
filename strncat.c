@@ -1,11 +1,12 @@
-// Understanding strncat function.
-#include <stdio.h>
-#include <string.h>
-int main() 
+// Understanding how to concatinate two strings explicitly.
+// Using strncat() function.
+#include<stdio.h>
+#include<string.h>
+int main()
 {
-    char str1[20] = "Hello World! ";
-    char str2[20] = "Welcome to C.";
-    strncat(str1,str2,13);
-    printf("%s",str1);
+    char str1[]="Hello";
+    char str2[]=" Macha";
+    strncat(str1,str2,3);
+    printf("Concatination string: %s",str1);
     return 0;
 }
